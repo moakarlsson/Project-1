@@ -1,0 +1,33 @@
+body{
+    margin: 0 20px;
+}
+/*Header*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
+.nav-left{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-right{
+    display: flex;
+    gap: 50px;  
+}
+
+#barky-image{
+    width: 100px;
+}
+#getbarkyfree{
+    background-color: black;
+    border-radius: 10px;
+    color: white; 
+}
+.nav-left p, .nav-right p{
+    padding: 15px;
+}
+
+
