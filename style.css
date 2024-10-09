@@ -9,12 +9,11 @@ body{
     font-family: "Customfont";
 }
 /*Header start*/
-
 .navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #e5e5e5;
     font-size: 12px;
     padding: 5px 0px;
 }
@@ -41,7 +40,7 @@ body{
     padding: 5px;
 }
 #requestademo{
-    border-right: solid black 1px;
+    border-right: solid #e5e5e5 1px;
 }
 /*Header ends*/
 /*Main starts*/
@@ -63,10 +62,18 @@ main{
 }
 
 #container-2{
-    display: flex;  
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px;
+    justify-content: center;
+    margin: 50px 0px;
+    border-top: 1px #e5e5e5 solid;
+    border-bottom: 1px #e5e5e5 solid;
+    padding: 20px;
+
 }
 #container-2 img{
-    height: 20px;
+    height: 25px;
 }
 
 
