@@ -49,7 +49,7 @@ main{
     max-width: 1000px;
     margin:auto;
 }
-#Container-1{
+#container-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 50px;
