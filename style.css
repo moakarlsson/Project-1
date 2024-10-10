@@ -6,7 +6,7 @@ body{
     box-sizing: border-box;
     font-family: "Customfont";
 }
-/*Header- navigation*/
+/*Header-navigation*/
 #sidhuvud{
     display: grid;
     grid-template-columns: 100px auto max-content;
@@ -23,25 +23,7 @@ body{
 .navigation{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-}
-.nav-left div{
-    padding: 5px;
-}
-.nav-right a{
-    padding: 5px;
-}
-.nav-right div{
-    padding-right: 10px;
-}
-.navigation a{
-    text-decoration: none;
-    color: black;
-}
-.navhover:hover{
-    background-color: #e5e5e5;
-    border-radius: 5px;
+    align-items: center;  
 }
 .nav-left{
     display: flex; 
@@ -52,6 +34,24 @@ body{
     display: flex;
     margin-right: 10px;
     gap: 20px;  
+}
+.nav-left div{
+    padding: 5px;
+}
+.nav-right div{
+    padding-right: 10px;
+}
+.nav-right a{
+    padding: 5px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: black;
+}
+.navhover:hover{
+    background-color: #e5e5e5;
+    border-radius: 5px;
 }
 a{
     color: white;
@@ -69,12 +69,14 @@ a{
     display: inline-block;
     padding: 10px 5px;
 } 
+.getbarkyfree:hover{
+    background-color:#353535 ;
+}
 
 #border{
-    border-right: solid #e5e5e5 1px; 
-   
+    border-right: solid #e5e5e5 1px;   
 }
-/*Header ends*/
+
 /*Main starts*/
 p{
     color: #7f7f7f;
@@ -121,6 +123,29 @@ main{
     line-height: 1.4;
     margin-bottom: 40px;  
 }
+.citatbox{
+    font-size: 26px;
+    text-align: center;
+    margin: auto;   
+}
+.text-image{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.text-image img{
+    height: 50px;
+}
+.below-image p{
+    margin-top: -10px;
+  
+}
+
+
+
 
 /*Dessa färger används (utan någon inbördes ordning): #050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7.*/
 
