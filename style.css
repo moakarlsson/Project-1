@@ -2,19 +2,14 @@
     font-family: "Customfont";
     src: url("Material/Inter.ttf");
 }
-.textcolor p{
-    color: #7f7f7f;
-}
-
 body{
     box-sizing: border-box;
     font-family: "Customfont";
 }
-/*Header start*/
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*Header- navigation*/
+#sidhuvud{
+    display: grid;
+    grid-template-columns: 100px auto max-content;
     border-bottom: solid 1px #e5e5e5;
     font-size: 13px;
     padding: 5px 0px;
@@ -24,30 +19,42 @@ body{
     left:0;
     right:0;
     background-color: white;  
+    padding: 10px 0;
 }
-.nav-left p:hover{
-    background-color: #f4f4f4;
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
 }
 .nav-left{
-    display: flex;    
+    display: flex; 
+    gap: 15px;  
+    margin-left:20px;
 }
-
 .nav-right{
     display: flex;
-    gap: 10px;
+    margin-right: 10px;
+    gap: 20px;  
 }
-.nav-left p, .nav-right p{
-    padding: 5px;
+a{
+    color: white;
+    text-decoration: none;
 }
 
+
 #barky-image{
-    width: 100px;
-    margin-right: 15px;
+    width: 100px;  
+    margin-top: 5px;
 }
 .getbarkyfree{
     background-color: black;
+    color: white;
     border-radius: 5px;
-    color: white; 
     display: inline-block;
     padding: 7px;
 }
@@ -102,5 +109,5 @@ main{
 
 /*Dessa färger används (utan någon inbördes ordning): #050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7.*/
 
-
+/*Typsnittet finner ni i mappen “material” (filen Inter.ttf) och det används på hela sidan. Följande typsnittstjocklekar har använts: 650, 550, 450, 400 och 320. Följande typsnittsstorlekar har använts (i pixlar): 53, 45, 36, 26, 24, 18, 15, 14, 13.5, 13 och 12**/
 
