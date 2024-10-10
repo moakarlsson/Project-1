@@ -11,7 +11,7 @@ body{
     display: grid;
     grid-template-columns: 100px auto max-content;
     border-bottom: solid 1px #e5e5e5;
-    font-size: 13px;
+    font-size: 14px;
     position: fixed;
     margin: 0 20px;
     top: 0;
@@ -78,6 +78,9 @@ a{
 }
 
 /*Main starts*/
+h2{
+    font-size: 24px;
+}
 p{
     color: #7f7f7f;
 }
@@ -112,21 +115,22 @@ main{
     height: 25px;
 }
    
-#container-3 img{
+.container-3 img{
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
     border-radius: 5px;
 }
 
-#container-3 p{
+.container-3 p{
     width: 50%;
     line-height: 1.4;
+    margin-top: -15px;
     margin-bottom: 40px;  
 }
 .citatbox{
     font-size: 26px;
     text-align: center;
-    margin: auto;   
+     
 }
 .text-image{
     font-size: 13px;
@@ -134,6 +138,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 5px;
+    padding-bottom: 50px;
 }
 
 .text-image img{
