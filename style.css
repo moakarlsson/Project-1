@@ -11,10 +11,17 @@ p{
 }
 
 h2{
-    font-size: 24px;
+    font-size: 24px; 
 }
 
-
+h1{
+    font-size: 36px;
+    margin: 0;
+}
+footer{
+    max-width: 1200px;
+    border-top: 1px solid #e5e5e5;
+}
 /*Header-navigation*/
 #sidhuvud{
     display: grid;
@@ -81,7 +88,7 @@ a{
     background-color:#353535 ;
 }
 
-#border, .row-style{
+#border,.row-style2{
     border-right: solid #e5e5e5 1px;   
 }
 
@@ -111,8 +118,7 @@ main{
     gap: 30px;
     margin: 50px 0px;
     padding: 20px;
-    border-top: 1px #e5e5e5 solid;
-   
+    border-top: 1px #e5e5e5 solid; 
 }
 #container-2 img{
     height: 25px;
@@ -194,6 +200,39 @@ main{
     font-size: 18px;
     padding: 20px;
     text-align: center;
+}
+.row-2{
+    border-right: 1px solid #e5e5e5;
+    border-left:  1px solid #e5e5e5;
+}
+.container-7,.container-9{
+    text-align: center;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container-7 img{
+    width: 100%;
+}
+.container-8{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container-8 div{
+    text-align: center;
+}
+#barky-style{
+    width: 150px;
+    margin-bottom: 20px;
+
+}
+#icon-style{
+    display: flex;
+    width: 20px;
+    gap: 10px;
+    margin: 25px 0 60px 0;
+
 }
 
 
