@@ -19,8 +19,9 @@ h1{
     margin: 0;
 }
 footer{
-    max-width: 1200px;
     border-top: 1px solid #e5e5e5;
+
+  
 }
 /*Header-navigation*/
 #sidhuvud{
@@ -197,9 +198,12 @@ main{
     
 }
 .row-style{
-    font-size: 18px;
     padding: 20px;
+    font-size: 18px;
     text-align: center;
+}
+.row-style h3{
+    margin: 0;
 }
 .row-2{
     border-right: 1px solid #e5e5e5;
@@ -224,7 +228,6 @@ main{
 }
 #barky-style{
     width: 150px;
-    margin-bottom: 20px;
 
 }
 #icon-style{
@@ -232,8 +235,19 @@ main{
     width: 20px;
     gap: 10px;
     margin: 25px 0 60px 0;
-
 }
+.container-10{
+    max-width: 1200px;
+    display: grid;
+    margin: 50px auto 50px auto;
+    grid-template-columns: 300px auto;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 
 
 
