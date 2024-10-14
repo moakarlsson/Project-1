@@ -9,6 +9,12 @@ body{
 p{
     color: #7f7f7f;
 }
+
+h2{
+    font-size: 24px;
+}
+
+
 /*Header-navigation*/
 #sidhuvud{
     display: grid;
@@ -75,7 +81,7 @@ a{
     background-color:#353535 ;
 }
 
-#border{
+#border, .row-style{
     border-right: solid #e5e5e5 1px;   
 }
 
@@ -84,11 +90,6 @@ main{
     max-width:1000px;
     margin:auto;
 }
-
-h2{
-    font-size: 24px;
-}
-
 
 #container-1{
     display: grid;
@@ -164,7 +165,8 @@ h2{
 }
 .background-box{
     background-color: #f4f4f4;
-    margin: auto;
+    margin: 40px auto 50px auto;
+    border-radius: 5px;
     width: 700px;
     padding: 20px;
 }
@@ -178,6 +180,23 @@ h2{
 .container-5 img{
     height: 30px;
 }
+#container-6{
+    padding: 40px 0 0 0;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+#row-bar{
+    display:flex; 
+    margin-top: 50px;
+    
+}
+.row-style{
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+
+
 
 
 
