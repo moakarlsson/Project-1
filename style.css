@@ -35,7 +35,7 @@ footer{
     top: 0;
     left:0;
     right:0;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 .navigation{
     display: flex;
@@ -110,6 +110,15 @@ main{
 
 #imagebox-1{
     width: 100%;  
+}
+#hamburger{
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+#hamburger:hover{
+    background-color: #e5e5e5;
+
 }
 
 #container-2{
@@ -254,15 +263,20 @@ main{
         display: none;
     }
     #sidhuvud{
-        background-image: url(Material/hamburger.svg);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: 20px;
+        position: relative;
+        border: transparent;
     }
     #container-1{
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
+    }
+    #hamburger{
+        display: flex;
+        width: 20px;
+        position: absolute;
+        right: 0;
+        top: 10px;   
     }
 
 }
