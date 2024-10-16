@@ -212,7 +212,7 @@ main{
     font-size: 18px;
     text-align: center;
 }
-.row-style h3{
+.row-style h3, .container-9 h2{
     margin: 0;
 }
 .row-2{
@@ -231,15 +231,21 @@ main{
     width: 100%;
 }
 .container-8{
+    margin: 50px 0 50px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.row-style2 h1{
+    font-size: 46px;
+    color: #7f7f7f;
+    
+}
 .container-8 div{
     text-align: center;
+    
 }
 #barky-style{
     width: 150px;
-
 }
 #icon-style{
     display: flex;
@@ -258,6 +264,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 /*Anpassat för mobik*/
 @media (max-width:600px){
     #mobile, .navigation{
@@ -311,7 +318,7 @@ main{
     #container-6 p{
         text-align: center;
     }
-    .container.5, .background-box{
+    .container-5, .background-box{
         width: 100%;
     }
 }
@@ -319,7 +326,7 @@ main{
 
 
 
-/*Dessa färger används (utan någon inbördes ordning): #050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 och #087fe7.*/
+/*Dessa färger används (utan någon inbördes ordning): #050505, #121212, #353535, #666666, #7f7f7f, #999999, #e5e5e5, #f4f4f4 (vit) och #087fe7 (blå).*/
 
 /*Typsnittet finner ni i mappen “material” (filen Inter.ttf) och det används på hela sidan. Följande typsnittstjocklekar har använts: 650, 550, 450, 400 och 320. Följande typsnittsstorlekar har använts (i pixlar): 53, 45, 36, 26, 24, 18, 15, 14, 13.5, 13 och 12**/
 
