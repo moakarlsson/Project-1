@@ -78,7 +78,7 @@ footer{
     margin-top: 5px;
 }
 .getbarkyfree{
-    background-color: black;
+    background-color: #050505;
     color: white;
     border-radius: 5px;
     display: inline-block;
@@ -109,7 +109,8 @@ main{
     font-size: 36px;
 }
 
-#imagebox-1{
+#imagebox-1, 
+.container-7 img{
     width: 100%;  
 }
 #hamburger{
@@ -147,6 +148,7 @@ main{
     margin-bottom: 40px;  
 }
 .citatbox{
+    font-weight: 550;
     font-size: 26px;
     text-align: center;
      
@@ -207,15 +209,23 @@ main{
 }
 .row-style{
     padding: 20px;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
 }
-.row-style h3, .container-9 h2{
+.row-style h3, 
+.container-9 h2,
+.container-8 p,
+.row-style2 h1{
     margin: 0;
+}
+.container-7,
+.container-9,
+.container-8 div,{
+    text-align: center;
 }
 .row-style a{
     color: black;
-    text-decoration-color: black;
+    text-decoration-color: #050505;
 }
 .row-style a:hover{
     color: #087fe7;
@@ -225,9 +235,7 @@ main{
     border-right: 1px solid #e5e5e5;
     border-left:  1px solid #e5e5e5;
 }
-.container-7,.container-9{
-    text-align: center;
-}
+
 
 .grid-box{
     display: grid;
@@ -235,9 +243,7 @@ main{
     margin-top: 40px;
     text-align: left;
 }
-.container-7 img{
-    width: 100%;
-}
+
 .container-8{
     margin: 50px 0 50px 0;
     display: grid;
@@ -245,13 +251,10 @@ main{
 }
 .row-style2 h1{
     font-size: 46px;
-    color: #7f7f7f;
-    
+    color: #666666;
 }
-.container-8 div{
-    text-align: center;
-    
-}
+
+
 #barky-style{
     margin-top: 15px;
     width: 150px;
@@ -270,11 +273,13 @@ main{
 }
 
 .footer-grid{
+    font-weight:450;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: 30px;
 }
 .footer-grid a{
+    font-weight: 320;
     text-decoration: none;
     display: block;
     color: #7f7f7f;
@@ -297,6 +302,7 @@ main{
         display: flex;
         flex-direction: column-reverse;
     }
+    
     
     #hamburger{
         display: flex;
