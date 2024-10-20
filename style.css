@@ -8,19 +8,33 @@ body{
 }
 p{
     color: #7f7f7f;
+    font-weight: 320;
 }
 
-h2{
-    font-size: 24px; 
+h1, h2{
+    font-weight: 650; 
 }
-
-h1{
-    font-size: 36px;
-    margin: 0;
+#sidhuvud a,.below-image h3{
+    font-weight: 450;
 }
 footer{
     border-top: 1px solid #e5e5e5;
 }
+
+
+.row-style h3, 
+.container-9 h2,
+.container-8 p,
+h1{
+    margin: 0;
+}
+.container-7,
+.container-9,
+.container-8 div,
+.citatbox{
+    text-align: center;
+}
+
 /*Header-navigation*/
 #sidhuvud{
     display: grid;
@@ -28,7 +42,7 @@ footer{
     border-bottom: solid 1px #e5e5e5;
     background-color: white;  
     position: fixed;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0 20px;
     top: 0;
     left:0;
@@ -72,28 +86,79 @@ footer{
     text-decoration: none;
 }
 
-
-#barky-image{
-    width: 100px;  
-    margin-top: 5px;
-}
 .getbarkyfree{
+    font-size: 14px;
+    font-weight: 400;
     background-color: #050505;
     color: white;
     border-radius: 5px;
     display: inline-block;
-    padding: 10px 5px;
+    padding: 7px 15px;
 } 
+#barky-image{
+    width: 100px;  
+    margin-top: 5px;
+}
 .getbarkyfree:hover{
     background-color:#353535 ;
 }
 
-
 #border,.row-style2{
     border-right: solid #e5e5e5 1px;   
 }
+/*Drop-down meny*/
+/*.drop-down1{
+    position: absolute;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+}
+.drop-down1 img{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+}
+.drop-down1 nav{
+    display: flex;
+}
+.drop-down1 div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.drop-down1 a{
+    color: #747474;
+}*/
+/*.drop-down1{
+    position: absolute;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+}
+.drop-down1 img{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+}
+.drop-down1 nav{
+    display: flex;
+}
+.drop-down1 div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.drop-down1 a{
+    color: #747474;
+}
+*/
 
 /*Main*/
+
 main{
     max-width:1000px;
     margin:auto;
@@ -147,11 +212,14 @@ main{
     margin-top: -15px;
     margin-bottom: 40px;  
 }
-.citatbox{
+.container-3 h2{
+    font-size: 36px;
+    width: 45%;
+}
+.citatbox p{
+    color: #999;
     font-weight: 550;
-    font-size: 26px;
-    text-align: center;
-     
+    font-size: 36px;  
 }
 .text-image{
     font-size: 13px;
@@ -173,14 +241,13 @@ main{
 .container-5{
     border-bottom: solid 1px #e5e5e5; 
 }
-#container-4{
+.container-4, #container-6{
+    font-size: 18px;
     text-align: center;
-    margin: auto;
+    margin: 50px auto ;
     padding-top: 30px;
 }
-#container-4 p{
-    font-size: 18px;
-}
+
 .background-box{
     box-sizing: border-box;
     background-color: #f4f4f4;
@@ -195,7 +262,7 @@ main{
     justify-content: space-between; 
 }
 .container-5 img{
-    height: 30px;
+    height: 20px;
 }
 #container-6{
     padding: 40px 0 0 0;
@@ -207,24 +274,15 @@ main{
     margin: 50px 0;
     
 }
+
 .row-style{
     padding: 20px;
     font-size: 15px;
     text-align: center;
 }
-.row-style h3, 
-.container-9 h2,
-.container-8 p,
-.row-style2 h1{
-    margin: 0;
-}
-.container-7,
-.container-9,
-.container-8 div,{
-    text-align: center;
-}
-.row-style a{
-    color: black;
+
+.row-style a, .grid-box p{
+    color: #353535;
     text-decoration-color: #050505;
 }
 .row-style a:hover{
@@ -236,22 +294,34 @@ main{
     border-left:  1px solid #e5e5e5;
 }
 
-
 .grid-box{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     text-align: left;
 }
+.grid-box div{
+    margin-left: 40px;
+}
 
 .container-8{
-    margin: 50px 0 50px 0;
+    margin: 50px 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
+.container-9{
+    margin-bottom: 40px;
+}
+.container-8 div{
+    margin-top: 30px;
+}
+
 .row-style2 h1{
-    font-size: 46px;
+    font-size: 53px;
     color: #666666;
+}
+.row-style h3{
+    font-weight: 550;
 }
 
 
@@ -275,18 +345,25 @@ main{
 .footer-grid{
     font-weight:450;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
     margin-left: 30px;
+}
+.footer-grid p{
+    font-weight: 400;
 }
 .footer-grid a{
     font-weight: 320;
-    text-decoration: none;
+    text-decoration: none;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     display: block;
     color: #7f7f7f;
     margin-bottom: 10px;
 }
 .footer-grid a:hover{
     text-decoration: underline;
+}
+#footer-text-style p{
+    color:#353535;
+    
 }
 
 /*Anpassat för mobik*/
@@ -303,15 +380,17 @@ main{
         flex-direction: column-reverse;
     }
     
-    
     #hamburger{
         display: flex;
-        width: 20px;
         position: absolute;
+        width: 20px;
         right: 0;
         top: 10px;   
     }
-    main,.container-9 p{
+    main,
+    .container-9 p,
+    .row-style p,
+    #container-6 p{
         text-align: center;
     }
     .container-3 p{
@@ -321,7 +400,7 @@ main{
         display: flex;
         flex-direction: column;
     }
-    .row-2, .row-style2{
+    .row-2,.row-style2{
         border: transparent;
     }
     .container-7 h2, p{
@@ -339,13 +418,12 @@ main{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;  
     }
-    #container-6 p{
-        text-align: center;
-    }
+   
     .container-5,.background-box{
         width: 100%;
     }
 }
+
 
 
 
