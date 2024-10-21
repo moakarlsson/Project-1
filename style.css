@@ -9,23 +9,27 @@ body{
 p{
     color: #7f7f7f;
     font-weight: 320;
+    line-height: 1.4;
 }
 
 h1, h2{
     font-weight: 650; 
 }
-#sidhuvud a,.below-image h3{
+h2{
+    font-size: 36px;
+}
+#sidhuvud a,.below-image h3, .getbarkyfree a{
     font-weight: 450;
 }
 footer{
     border-top: 1px solid #e5e5e5;
 }
 
-
 .row-style h3, 
 .container-9 h2,
 .container-8 p,
-h1{
+h1,.container-1 h1,
+.text-box p, .container-3 h2{
     margin: 0;
 }
 .container-7,
@@ -56,7 +60,7 @@ h1{
 }
 .nav-left{
     display: flex; 
-    gap: 15px;  
+    gap: 10px;  
     margin-left:20px;
 }
 .nav-right{
@@ -64,12 +68,15 @@ h1{
     margin-right: 10px;
     gap: 20px;  
 }
-.nav-left div, 
+.nav-left a, 
 .nav-right a{
     padding: 5px;
 }
 .nav-right div{
     padding-right: 10px;
+}
+.nav-left img{
+    margin-left: 5px;
 }
 
 .navigation a,
@@ -81,22 +88,20 @@ h1{
     background-color: #e5e5e5;
     border-radius: 5px;
 }
- .getbarkyfree a{
+ .getbarkyfree a, .container-4 a, .container-9 a{
     color: white;
     text-decoration: none;
 }
 
 .getbarkyfree{
     font-size: 14px;
-    font-weight: 400;
-    background-color: #050505;
     color: white;
+    background-color: #050505;
     border-radius: 5px;
     display: inline-block;
     padding: 7px 15px;
 } 
-#barky-image{
-    width: 100px;  
+#barky-image{  
     margin-top: 5px;
 }
 .getbarkyfree:hover{
@@ -106,59 +111,7 @@ h1{
 #border,.row-style2{
     border-right: solid #e5e5e5 1px;   
 }
-/*Drop-down meny*/
-/*.drop-down1{
-    position: absolute;
-    background-color: white;
-    border: 1px solid #e5e5e5;
-}
-.drop-down1 img{
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #e5e5e5;
-    border-radius: 10px;
-}
-.drop-down1 nav{
-    display: flex;
-}
-.drop-down1 div{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    
-}
-.drop-down1 a{
-    color: #747474;
-}*/
-/*.drop-down1{
-    position: absolute;
-    background-color: white;
-    border: 1px solid #e5e5e5;
-}
-.drop-down1 img{
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #e5e5e5;
-    border-radius: 10px;
-}
-.drop-down1 nav{
-    display: flex;
-}
-.drop-down1 div{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    
-}
-.drop-down1 a{
-    color: #747474;
-}
-*/
-
 /*Main*/
-
 main{
     max-width:1000px;
     margin:auto;
@@ -171,12 +124,15 @@ main{
     margin-top: 100px;
 }
 #container-1 h1{
-    font-size: 36px;
+    font-size: 53px;
 }
 
 #imagebox-1, 
 .container-7 img{
     width: 100%;  
+}
+.textbox{
+    margin-top: 40px;
 }
 #hamburger{
     display: none;
@@ -207,14 +163,12 @@ main{
 }
 
 .container-3 p{
-    width: 50%;
-    line-height: 1.4;
-    margin-top: -15px;
-    margin-bottom: 40px;  
+    font-size: 14px;
+    width: 43%;
+    margin-bottom: 40px;
 }
 .container-3 h2{
-    font-size: 36px;
-    width: 45%;
+    font-size: 26px;
 }
 .citatbox p{
     color: #999;
@@ -247,13 +201,19 @@ main{
     margin: 50px auto ;
     padding-top: 30px;
 }
+.container-4, .background-box{
+    width: 70%;
+}
+.container-4 p{
+    margin-bottom: 10px;
+}
 
 .background-box{
     box-sizing: border-box;
     background-color: #f4f4f4;
     margin: 40px auto 50px auto;
     border-radius: 5px;
-    width: 70%;
+    
     padding: 20px;
 }
 .container-5{
@@ -269,10 +229,10 @@ main{
     text-align: center;
     border-top: 1px solid #e5e5e5;
 }
+
 #row-bar{
     display:flex; 
-    margin: 50px 0;
-    
+    margin: 50px 0; 
 }
 
 .row-style{
@@ -324,7 +284,6 @@ main{
     font-weight: 550;
 }
 
-
 #barky-style{
     margin-top: 15px;
     width: 150px;
@@ -371,6 +330,10 @@ main{
     #mobile, .navigation{
         display: none;
     }
+    main{
+        text-align: center;
+    }
+   
     #sidhuvud{
         position: relative;
         border: transparent;
@@ -379,7 +342,9 @@ main{
         display: flex;
         flex-direction: column-reverse;
     }
-    
+    .citatbox p{
+        font-size: 26px;
+    }
     #hamburger{
         display: flex;
         position: absolute;
@@ -387,26 +352,38 @@ main{
         right: 0;
         top: 10px;   
     }
-    main,
-    .container-9 p,
-    .row-style p,
-    #container-6 p{
-        text-align: center;
+    
+    .row-style h3{
+        font-size: 24px;
+        font-weight: 650;
     }
     .container-3 p{
         width: 100%;
     }
+    
     #row-bar,.grid-box,.container-8{
         display: flex;
         flex-direction: column;
     }
+    .grid-box img,
+    .container-9{
+        margin-top: 35px;
+    }
     .row-2,.row-style2{
         border: transparent;
     }
-    .container-7 h2, p{
+    .container-7 h3,
+    .container-7{
         text-align: left;
     }
+    .container-7 h3{
+        font-size: 26px;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    
     .container-8{
+        margin:0;
         align-items: center; 
     }
     .container-10{
@@ -418,9 +395,12 @@ main{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;  
     }
-   
+
     .container-5,.background-box{
         width: 100%;
+    }
+    #icon-style{
+        margin: 20px 0 40px;
     }
 }
 
